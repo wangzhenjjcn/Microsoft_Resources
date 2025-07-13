@@ -1,0 +1,60 @@
+{
+  "scraper": {
+    "base_url": "https://www.imsdn.cn",
+    "timeout": 30,
+    "delay": 2,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "max_retries": 3
+  },
+  "generator": {
+    "site_title": "Windows系统下载资源",
+    "site_description": "提供Windows 11、Windows 10、Windows Server、Office、SQL Server等系统的下载资源",
+    "domain": "windows.unblock.win",
+    "last_updated_format": "%Y-%m-%d %H:%M:%S"
+  },
+  "systems": {
+    "windows-11": {
+      "name": "Windows 11",
+      "icon": "fas fa-windows",
+      "subtypes": [
+        "win11-24h2", "win11-ltsc", "win11-23h2", "win11-22h2", 
+        "win11-21h2", "win11-rtm", "win11-arm"
+      ]
+    },
+    "windows-10": {
+      "name": "Windows 10",
+      "icon": "fas fa-windows",
+      "subtypes": [
+        "win10-22h2", "win10-21h2", "win10-21h1", "win10-20h2",
+        "win10-2004", "win10-1909", "win10-1903", "win10-1809",
+        "win10-1803", "win10-1709", "win10-1703", "win10-1607",
+        "win10-1511", "win10-ltsc"
+      ]
+    },
+    "windows-server": {
+      "name": "Windows Server",
+      "icon": "fas fa-server",
+      "subtypes": [
+        "windows-server-2025", "windows-server-2022", "windows-server-2019",
+        "windows-server-2016", "windows-server-2012-r2", "windows-server-2012",
+        "windows-server-2008-r2", "windows-server-2008"
+      ]
+    },
+    "applications": {
+      "name": "Office",
+      "icon": "fas fa-file-word",
+      "subtypes": [
+        "office-2024", "office-2021", "office-2019", "office-2016",
+        "office-2013", "office-2010", "office-2007"
+      ]
+    },
+    "servers": {
+      "name": "SQL Server",
+      "icon": "fas fa-database",
+      "subtypes": [
+        "sql-server-2019", "sql-server-2016", "sql-server-2014",
+        "sql-server-2012", "sql-server-2008-r2", "sql-server-2005"
+      ]
+    }
+  }
+} 
