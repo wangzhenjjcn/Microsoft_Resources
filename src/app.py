@@ -3,6 +3,26 @@ from bs4 import BeautifulSoup
 import time
 import os
 import json
+import sys
+
+def check_dependencies():
+    """检查必要的依赖是否已安装"""
+    required_packages = ['requests', 'bs4']
+    missing_packages = []
+    
+    for package in required_packages:
+        try:
+            __import__(package)
+        except ImportError:
+            missing_packages.append(package)
+    
+    if missing_packages:
+        print(f"❌ 缺少必要的依赖包: {', '.join(missing_packages)}")
+        print("请运行以下命令安装依赖:")
+        print("pip install -r requirements.txt")
+        sys.exit(1)
+    else:
+        print("✅ 所有依赖包已安装")
 
 def extract_page_data(url):
     """提取页面数据"""
@@ -595,6 +615,9 @@ def save_page_data(url):
     print(f"已保存到: {full_path}")
 
 def main():
+    # 检查依赖
+    check_dependencies()
+    
     # 读取已采集的链接
     with open('docs/a.txt', 'r', encoding='utf-8') as f:
         links = [line.strip() for line in f.readlines()]
