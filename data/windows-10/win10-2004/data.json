@@ -1,0 +1,89 @@
+{
+  "title": "Windows 10 2004",
+  "intro_text": "发行时间：2020年5月27日主流支持结束日期：2021年12月14日扩展支持结束日期：2021年12月14日内核版本号：Windows NT 10.0消费者版本：内含家庭版、家庭单语言版、专业版、教育版。商业版：内含企业版、专业版、专业教育版、专业工作站版、教育版。",
+  "versions": [
+    {
+      "version_text": "所有版本，点击版本按钮切换",
+      "attributes": [],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_2004_updated_sep_2020_x64_dvd_7134ba4b.iso|5313628160|7CF0E7C3324B4209663B8B971A5ACEF2|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_2004_updated_sep_2020_x86_dvd_31186d54.iso|3815186432|AD69BE7D54BA87FCDADBDF5054249094|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x64_dvd_049d70ee.iso|5424910336|9100F2CD41FED19B3314FFCF182DF026|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x86_dvd_8a8fe8c0.iso|3893041152|B6C95CA453EE875C0C4A6F19125FC5D2|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 2004 简体中文 64位 （2020.09更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_editions_version_2004_updated_sep_2020_x64_dvd_7134ba4b.iso",
+        "文件大小：4.95GB",
+        "发布时间：2020-09-15",
+        "SHA1：BF0874FFE0FAE1C557E65F49B83B5E83BE7DBF24"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_2004_updated_sep_2020_x64_dvd_7134ba4b.iso|5313628160|7CF0E7C3324B4209663B8B971A5ACEF2|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 2004 简体中文 32位 （2020.09更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_editions_version_2004_updated_sep_2020_x86_dvd_31186d54.iso",
+        "文件大小：3.55GB",
+        "发布时间：2020-09-15",
+        "SHA1：3DF30BEE3D105E5B5F70204D3E7402FA61C4D937"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_2004_updated_sep_2020_x86_dvd_31186d54.iso|3815186432|AD69BE7D54BA87FCDADBDF5054249094|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 2004 简体中文 64位 （2020.09更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x64_dvd_049d70ee.iso",
+        "文件大小：5.05GB",
+        "发布时间：2020-09-15",
+        "SHA1：B5121926EF2FBBA7F198E30F3D7F293A20A1C144"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x64_dvd_049d70ee.iso|5424910336|9100F2CD41FED19B3314FFCF182DF026|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 2004 简体中文 32位 （2020.09更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x86_dvd_8a8fe8c0.iso",
+        "文件大小：3.63GB",
+        "发布时间：2020-09-15",
+        "SHA1：FBF3932595AF8ACE99FF9F1DAA353F5F321C4630"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x86_dvd_8a8fe8c0.iso|3893041152|B6C95CA453EE875C0C4A6F19125FC5D2|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-10/win10-2004/"
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Windows 10 1903",
+  "intro_text": "发行时间：2019年4月19日主流支持结束日期：2020年12月8日扩展支持结束日期：2020年12月8日内核版本号：Windows NT 10.0消费者版本：内含家庭版、家庭单语言版、专业版、教育版。商业版：内含企业版、专业版、专业教育版、专业工作站版、教育版。",
+  "versions": [
+    {
+      "version_text": "所有版本，点击版本按钮切换",
+      "attributes": [],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_1903_updated_nov_2019_x64_dvd_59670fa0.iso|5299363840|09A8B4CA5A06F4A69F580BB92E72C365|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_1903_updated_july_2019_x86_dvd_81a0945b.iso|3703326720|575FF245531FAD9D2C9661CABA83F3C2|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_1903_updated_nov_2019_x64_dvd_055b3530.iso|5409650688|EBA2C4E4A7B30C55FA9C042DB7461675|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_1903_updated_july_2019_x86_dvd_3995e09a.iso|3781146624|F48A0E973223A3DFA99A1F9A83C3394F|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 1903 简体中文 64位 （2019.11更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_editions_version_1903_updated_nov_2019_x64_dvd_59670fa0.iso",
+        "文件大小：4.94GB",
+        "发布时间：2019-11-19",
+        "SHA1：b27ee26dd4a486aa290f060c79302ddb71f039c2"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_1903_updated_nov_2019_x64_dvd_59670fa0.iso|5299363840|09A8B4CA5A06F4A69F580BB92E72C365|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 1903 简体中文 32位 （2019.07更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_editions_version_1903_updated_july_2019_x86_dvd_81a0945b.iso",
+        "文件大小：3.45GB",
+        "发布时间：2019-07-16",
+        "SHA1：0e8b28af6c9a3134e880134c63030768b43f75d6"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_1903_updated_july_2019_x86_dvd_81a0945b.iso|3703326720|575FF245531FAD9D2C9661CABA83F3C2|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 1903 简体中文 64位 （2019.11更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_editions_version_1903_updated_nov_2019_x64_dvd_055b3530.iso",
+        "文件大小：5.04GB",
+        "发布时间：2019-11-19",
+        "SHA1：84ceabc065b49a54334da4ed540630fa4a66ad66"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_1903_updated_nov_2019_x64_dvd_055b3530.iso|5409650688|EBA2C4E4A7B30C55FA9C042DB7461675|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 1903 简体中文 32位 （2019.07更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_editions_version_1903_updated_july_2019_x86_dvd_3995e09a.iso",
+        "文件大小：3.52GB",
+        "发布时间：2019-07-16",
+        "SHA1：cb13fa78fc8a3036245e3d84a427885e52237a98"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_1903_updated_july_2019_x86_dvd_3995e09a.iso|3781146624|F48A0E973223A3DFA99A1F9A83C3394F|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-10/win10-1903/"
+}

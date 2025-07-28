@@ -1,0 +1,75 @@
+{
+  "title": "Windows 11 RTM",
+  "intro_text": "发行时间：2021年6月24日内核版本号：Windows NT 10.0Windows 11主要分为两个大版本：消费者版本和商业版。消费者版本：内含家庭版、家庭单语言版、教育版、专业版、专业教育版、专业工作站版。商业版：内含企业版、教育版、专业版、专业教育版、专业工作站版。",
+  "versions": [
+    {
+      "version_text": "Windows 11 商业版 简体中文 64位",
+      "attributes": [
+        "文件名：zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso",
+        "文件大小：5.04GB",
+        "发布时间：2021-10-04",
+        "MD5：EA6553AD6D9CFC542A4D9E9B92842C1D",
+        "SHA1：64769CCDC7B319F90811E039FA49E785569FD87B"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso|5413181440|88CA1AE28F5F8A238647561B5C00E511|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "https://pan.baidu.com/s/1GWJsgQzLlLG42fTWMVAfoA?pwd=MSDN",
+          "download_type": "百度网盘下载，提取码：MSDN"
+        },
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_consumer_editions_x64_dvd_904f13e4.iso|5517273088|DFD1AE88E36516B87382FC3D3D3F46AD|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "https://pan.baidu.com/s/1L0PJAIvU4UZhOgTVM5W50g?pwd=MSDN",
+          "download_type": "百度网盘下载，提取码：MSDN"
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 11 商业版 简体中文 64位",
+      "attributes": [
+        "文件名：zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso",
+        "文件大小：5.04GB",
+        "发布时间：2021-10-04",
+        "MD5：EA6553AD6D9CFC542A4D9E9B92842C1D",
+        "SHA1：64769CCDC7B319F90811E039FA49E785569FD87B"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_business_editions_x64_dvd_f5f6bcbd.iso|5413181440|88CA1AE28F5F8A238647561B5C00E511|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "https://pan.baidu.com/s/1GWJsgQzLlLG42fTWMVAfoA?pwd=MSDN",
+          "download_type": "百度网盘下载，提取码：MSDN"
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 11 消费者版本 简体中文 64位",
+      "attributes": [
+        "文件名：zh-cn_windows_11_consumer_editions_x64_dvd_904f13e4.iso",
+        "文件大小：5.14GB",
+        "发布时间：2021-10-04",
+        "MD5：68FB0CAD069CF82A9BA0996A6D3D112B",
+        "SHA1：9F602662FFAB0DF3B3A66FC6A42849BFFD3315A7"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_consumer_editions_x64_dvd_904f13e4.iso|5517273088|DFD1AE88E36516B87382FC3D3D3F46AD|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "https://pan.baidu.com/s/1L0PJAIvU4UZhOgTVM5W50g?pwd=MSDN",
+          "download_type": "百度网盘下载，提取码：MSDN"
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-11/win11-rtm"
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Windows 10 1703",
+  "intro_text": "发行时间：2017年4月11日主流支持结束日期：2019年10月8日扩展支持结束日期：2019年10月8日内核版本号：Windows NT 10.0多版本：内含家庭版、专业版。企业版",
+  "versions": [
+    {
+      "version_text": "所有版本，点击版本按钮切换",
+      "attributes": [],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_enterprise_version_1703_updated_july_2017_x64_dvd_10925390.iso|5057685504|C57CF8BE5700DE2ACB7DCF229632120B|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_enterprise_version_1703_updated_july_2017_x86_dvd_10925421.iso|3790645248|2609A56EB3C599A2715D815DB02D9CBA|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_multiple_editions_version_1703_updated_july_2017_x64_dvd_10925382.iso|5849513984|D4A186940512939EAF72EF91FE74C0F8|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_multiple_editions_version_1703_updated_july_2017_x86_dvd_10925372.iso|4414928896|3454A17F236E56401A0B9BB62CE49760|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 企业版 1703 简体中文 64位 （2017.07更新）",
+      "attributes": [
+        "文件名：cn_windows_10_enterprise_version_1703_updated_july_2017_x64_dvd_10925390.iso",
+        "文件大小：4.71GB",
+        "发布时间：2017-07-27",
+        "SHA1：D1B4BA887936EAEC41D7A4F1ECD836FBA8DD0BF9"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_enterprise_version_1703_updated_july_2017_x64_dvd_10925390.iso|5057685504|C57CF8BE5700DE2ACB7DCF229632120B|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 企业版 1703 简体中文 32位 （2017.07更新）",
+      "attributes": [
+        "文件名：cn_windows_10_enterprise_version_1703_updated_july_2017_x86_dvd_10925421.iso",
+        "文件大小：3.53GB",
+        "发布时间：2017-07-27",
+        "SHA1：F715426F60226AC70417875FE4DFA3766D0C1E59"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_enterprise_version_1703_updated_july_2017_x86_dvd_10925421.iso|3790645248|2609A56EB3C599A2715D815DB02D9CBA|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 多版本 1703 简体中文 64位 （2017.07更新）",
+      "attributes": [
+        "文件名：cn_windows_10_multiple_editions_version_1703_updated_july_2017_x64_dvd_10925382.iso",
+        "文件大小：5.45GB",
+        "发布时间：2017-07-27",
+        "SHA1：77051E8DEF254447BF91003E581317382D979B7B"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_multiple_editions_version_1703_updated_july_2017_x64_dvd_10925382.iso|5849513984|D4A186940512939EAF72EF91FE74C0F8|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 多版本 1703 简体中文 32位 （2017.07更新）",
+      "attributes": [
+        "文件名：cn_windows_10_multiple_editions_version_1703_updated_july_2017_x86_dvd_10925372.iso",
+        "文件大小：4.11GB",
+        "发布时间：2017-07-27",
+        "SHA1：CB9D41095FFAA29D39928085396632F43F60D4CA"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_multiple_editions_version_1703_updated_july_2017_x86_dvd_10925372.iso|4414928896|3454A17F236E56401A0B9BB62CE49760|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-10/win10-1703/"
+}

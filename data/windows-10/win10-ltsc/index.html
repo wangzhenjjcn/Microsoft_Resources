@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 长期服务版</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #0078d4;
+            padding-bottom: 10px;
+        }
+        .intro {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .version {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .version-header {
+            background-color: #0078d4;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .version-attributes {
+            padding: 15px;
+            background-color: #f8f9fa;
+        }
+        .download-section {
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .download-type {
+            font-weight: bold;
+            color: #0078d4;
+            margin-bottom: 10px;
+        }
+        .download-url {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+        .copy-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .copy-btn:hover {
+            background-color: #218838;
+        }
+        .download-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+        .thunder-btn {
+            background-color: #ff6b35;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .thunder-btn:hover {
+            background-color: #e55a2b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Windows 10 长期服务版</h1>
+        
+        <div class="intro">
+            发行时间：2015年7月29日内核版本号：Windows NT 10.0
+        </div>
+        
+        
+        <div class="version">
+            <div class="version-header">所有版本，点击版本按钮切换</div>
+            <div class="version-attributes">
+                
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1aSwiy_1LB4XGiWshvi5SHg?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1aSwiy_1LB4XGiWshvi5SHg?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1aSwiy_1LB4XGiWshvi5SHg?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_32BIT_ChnSimp_MLF_X22-84401.ISO|3621132288|F67BB339ADFEFCF6ED22400EAACBD068|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_32BIT_ChnSimp_MLF_X22-84401.ISO|3621132288|F67BB339ADFEFCF6ED22400EAACBD068|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_32BIT_ChnSimp_MLF_X22-84401.ISO|3621132288|F67BB339ADFEFCF6ED22400EAACBD068|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1akKwEBEg7bfXWfYBTbgLLQ?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1akKwEBEg7bfXWfYBTbgLLQ?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1akKwEBEg7bfXWfYBTbgLLQ?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1vtxPKf-4vgkzALeRegYiJg?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1vtxPKf-4vgkzALeRegYiJg?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1vtxPKf-4vgkzALeRegYiJg?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso|3196803072|2D39C54A2E99BAC308191C74A15B3237|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso|3196803072|2D39C54A2E99BAC308191C74A15B3237|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso|3196803072|2D39C54A2E99BAC308191C74A15B3237|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1QLE9V-GC7Hv_oJA_-31vqA?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1QLE9V-GC7Hv_oJA_-31vqA?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1QLE9V-GC7Hv_oJA_-31vqA?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x64_dvd_9060409.iso|3821895680|FF17FF2D5919E3A560151BBC11C399D1|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x64_dvd_9060409.iso|3821895680|FF17FF2D5919E3A560151BBC11C399D1|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x64_dvd_9060409.iso|3821895680|FF17FF2D5919E3A560151BBC11C399D1|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1WpU4jkjip9daLLsJu6h6GQ?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1WpU4jkjip9daLLsJu6h6GQ?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1WpU4jkjip9daLLsJu6h6GQ?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x86_dvd_9057089.iso|2817034240|67C3865D03E765BDD4845BA2CB7649F8|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x86_dvd_9057089.iso|2817034240|67C3865D03E765BDD4845BA2CB7649F8|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x86_dvd_9057089.iso|2817034240|67C3865D03E765BDD4845BA2CB7649F8|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1XCmZ9e7lJPLhCjj0LZ6nkQ?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1XCmZ9e7lJPLhCjj0LZ6nkQ?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1XCmZ9e7lJPLhCjj0LZ6nkQ?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+        </div>
+        
+        <div class="version">
+            <div class="version-header">Windows 10 企业版 2021 长期服务版 简体中文 64位</div>
+            <div class="version-attributes">
+                <div>文件名：SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO</div><div>文件大小：4.70GB</div><div>发布时间：2021-11-17</div><div>MD5：2579B3865C0591EAD3A2B45AF3CABEEE</div><div>SHA1：C19D7DAFBAFEB26C36E31D97C465E87C7A6E8A4C</div>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1aSwiy_1LB4XGiWshvi5SHg?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1aSwiy_1LB4XGiWshvi5SHg?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1aSwiy_1LB4XGiWshvi5SHg?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+        </div>
+        
+        <div class="version">
+            <div class="version-header">Windows 10 企业版 2021 长期服务版 简体中文 32位</div>
+            <div class="version-attributes">
+                <div>文件名：SW_DVD9_WIN_ENT_LTSC_2021_32BIT_ChnSimp_MLF_X22-84401.ISO</div><div>文件大小：3.37GB</div><div>发布时间：2021-11-17</div><div>MD5：A4F6F8F67D9A59AD462FF51506C5CD3A</div><div>SHA1：50ED6860535FDDF9D0418EFD99EF7F40DAA696F5</div>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_32BIT_ChnSimp_MLF_X22-84401.ISO|3621132288|F67BB339ADFEFCF6ED22400EAACBD068|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_32BIT_ChnSimp_MLF_X22-84401.ISO|3621132288|F67BB339ADFEFCF6ED22400EAACBD068|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_32BIT_ChnSimp_MLF_X22-84401.ISO|3621132288|F67BB339ADFEFCF6ED22400EAACBD068|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1akKwEBEg7bfXWfYBTbgLLQ?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1akKwEBEg7bfXWfYBTbgLLQ?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1akKwEBEg7bfXWfYBTbgLLQ?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+        </div>
+        
+        <div class="version">
+            <div class="version-header">Windows 10 企业版 2019 长期服务版 简体中文 64位</div>
+            <div class="version-attributes">
+                <div>文件名：cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso</div><div>文件大小：4.17GB</div><div>发布时间：2019-03-15</div><div>SHA1：24b59706d5eded392423936c82ba5a83596b50cc</div>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1vtxPKf-4vgkzALeRegYiJg?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1vtxPKf-4vgkzALeRegYiJg?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1vtxPKf-4vgkzALeRegYiJg?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+        </div>
+        
+        <div class="version">
+            <div class="version-header">Windows 10 企业版 2019 长期服务版 简体中文 32位</div>
+            <div class="version-attributes">
+                <div>文件名：cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso</div><div>文件大小：2.98GB</div><div>发布时间：2019-03-15</div><div>SHA1：ba2169edd94f123211cd4aaca68352f1ab6195d9</div>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso|3196803072|2D39C54A2E99BAC308191C74A15B3237|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso|3196803072|2D39C54A2E99BAC308191C74A15B3237|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x86_dvd_1814dbab.iso|3196803072|2D39C54A2E99BAC308191C74A15B3237|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1QLE9V-GC7Hv_oJA_-31vqA?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1QLE9V-GC7Hv_oJA_-31vqA?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1QLE9V-GC7Hv_oJA_-31vqA?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+        </div>
+        
+        <div class="version">
+            <div class="version-header">Windows 10 企业版 2016 长期服务版 简体中文 64位</div>
+            <div class="version-attributes">
+                <div>文件名：cn_windows_10_enterprise_2016_ltsb_x64_dvd_9060409.iso</div><div>文件大小：3.56GB</div><div>发布时间：2016-08-11</div><div>SHA-1：9e405e950890d2a196565bca35e152f9cfad296d</div>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x64_dvd_9060409.iso|3821895680|FF17FF2D5919E3A560151BBC11C399D1|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x64_dvd_9060409.iso|3821895680|FF17FF2D5919E3A560151BBC11C399D1|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x64_dvd_9060409.iso|3821895680|FF17FF2D5919E3A560151BBC11C399D1|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1WpU4jkjip9daLLsJu6h6GQ?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1WpU4jkjip9daLLsJu6h6GQ?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1WpU4jkjip9daLLsJu6h6GQ?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+        </div>
+        
+        <div class="version">
+            <div class="version-header">Windows 10 企业版 2016 长期服务版 简体中文 32位</div>
+            <div class="version-attributes">
+                <div>文件名：cn_windows_10_enterprise_2016_ltsb_x86_dvd_9057089.iso</div><div>文件大小：2.62GB</div><div>发布时间：2016-08-11</div><div>SHA-1：0422052f25c9c8df983f3b287f725860aab907cf</div>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">迅雷下载：</div>
+                <div class="download-url">ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x86_dvd_9057089.iso|2817034240|67C3865D03E765BDD4845BA2CB7649F8|/</div>
+                <button class="copy-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x86_dvd_9057089.iso|2817034240|67C3865D03E765BDD4845BA2CB7649F8|/')">复制下载链接</button>
+                
+                <button class="thunder-btn" onclick="copyToClipboard('ed2k://|file|cn_windows_10_enterprise_2016_ltsb_x86_dvd_9057089.iso|2817034240|67C3865D03E765BDD4845BA2CB7649F8|/')">复制使用迅雷下载</button>
+            </div>
+            
+            <div class="download-section">
+                <div class="download-type">百度网盘下载，提取码：MSDN</div>
+                <div class="download-url">https://pan.baidu.com/s/1XCmZ9e7lJPLhCjj0LZ6nkQ?pwd=MSDN</div>
+                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1XCmZ9e7lJPLhCjj0LZ6nkQ?pwd=MSDN')">复制下载链接</button>
+                <button class="download-btn" onclick="openDownloadLink('https://pan.baidu.com/s/1XCmZ9e7lJPLhCjj0LZ6nkQ?pwd=MSDN')">立即下载</button>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            if (!text) return;
+            
+            navigator.clipboard.writeText(text).then(function() {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '已复制!';
+                btn.style.backgroundColor = '#6c757d';
+                
+                setTimeout(function() {
+                    btn.textContent = originalText;
+                    btn.style.backgroundColor = btn.classList.contains('thunder-btn') ? '#ff6b35' : '#28a745';
+                }, 2000);
+            }).catch(function(err) {
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '已复制!';
+                btn.style.backgroundColor = '#6c757d';
+                
+                setTimeout(function() {
+                    btn.textContent = originalText;
+                    btn.style.backgroundColor = btn.classList.contains('thunder-btn') ? '#ff6b35' : '#28a745';
+                }, 2000);
+            });
+        }
+        
+        function openDownloadLink(url) {
+            if (url) {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>

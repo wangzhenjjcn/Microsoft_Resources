@@ -1,0 +1,93 @@
+{
+  "title": "SQL SERVER 2019",
+  "intro_text": "发行时间：2019年11月4日主流支持结束日期：2025年1月14日扩展支持结束日期：2030年1月8日提供开发版、企业版、标准版、免费版等各版本下载。",
+  "versions": [
+    {
+      "version_text": "SQL 2019 开发版 简体中文 64位",
+      "attributes": [
+        "文件名：cn_sql_server_2019_developer_x64_dvd_c21035cc.iso",
+        "文件大小：1.52GB",
+        "发布时间：2019-11-04",
+        "SHA1：f7ebfc90363c5df9b7cbbac53f83ce408e3d3e87"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2019_developer_x64_dvd_c21035cc.iso|1632086016|7AFACB434CF9716CA7818F39F06BE0F5|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2019_enterprise_x64_dvd_2bfe815a.iso|1632086016|58C258FF0F1D006DD3C1F5F17AF3EAFD|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2019_standard_x64_dvd_2bfe815a.iso|1632086016|893DBEF7DDA20592405163E69E12DF40|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "https://www.microsoft.com/zh-cn/Download/details.aspx?id=101064",
+          "download_type": "微软官方下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2019 开发版 简体中文 64位",
+      "attributes": [
+        "文件名：cn_sql_server_2019_developer_x64_dvd_c21035cc.iso",
+        "文件大小：1.52GB",
+        "发布时间：2019-11-04",
+        "SHA1：f7ebfc90363c5df9b7cbbac53f83ce408e3d3e87"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2019_developer_x64_dvd_c21035cc.iso|1632086016|7AFACB434CF9716CA7818F39F06BE0F5|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2019 企业版 简体中文 64位",
+      "attributes": [
+        "文件名：cn_sql_server_2019_enterprise_x64_dvd_2bfe815a.iso",
+        "文件大小：1.52GB",
+        "发布时间：2019-11-04",
+        "SHA1：3c354dd094243bd4b5922eace6abe669317aa52e"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2019_enterprise_x64_dvd_2bfe815a.iso|1632086016|58C258FF0F1D006DD3C1F5F17AF3EAFD|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2019 标准版 简体中文 64位",
+      "attributes": [
+        "文件名：cn_sql_server_2019_standard_x64_dvd_2bfe815a.iso",
+        "文件大小：1.52GB",
+        "发布时间：2019-11-04",
+        "SHA1：b829950c88a12a7382a170a73895869593558039"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2019_standard_x64_dvd_2bfe815a.iso|1632086016|893DBEF7DDA20592405163E69E12DF40|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2019 免费版 简体中文",
+      "attributes": [
+        "文件名：SQL2019-SSEI-Expr.exe",
+        "文件大小：6.1 MB",
+        "发布时间：2022-4-18"
+      ],
+      "downloads": [
+        {
+          "download_url": "https://www.microsoft.com/zh-cn/Download/details.aspx?id=101064",
+          "download_type": "微软官方下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/servers/sql-server-2019"
+}

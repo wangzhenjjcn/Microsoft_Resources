@@ -1,0 +1,47 @@
+{
+  "title": "Windows 11 24H2 长期服务版",
+  "intro_text": "发行时间：2024年10月01日主流支持结束日期：2029年10月09日扩展支持结束日期：2029年10月09日内核版本号：Windows NT 10.0",
+  "versions": [
+    {
+      "version_text": "Windows 11 24H2 商业版 简体中文 64位",
+      "attributes": [
+        "文件名：zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso",
+        "文件大小：4.92GB",
+        "发布时间：2024-10-01",
+        "MD5：1A13ADE0178082432F90DF951A88842F",
+        "SHA1：AB7CD740E6CD495A69E3A90FCD7FB56BA0C5C62E"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso|5287520256|D6E4FE0BA5FD8A2F22FC9C0326481791|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "magnet:?xt=urn:btih:b84e74c1dbcc88a02c5b24a6f84383f353a2e1dd&dn=zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso&xl=5287520256",
+          "download_type": "BT："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 11 24H2 商业版 简体中文 64位",
+      "attributes": [
+        "文件名：zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso",
+        "文件大小：4.92GB",
+        "发布时间：2024-10-01",
+        "MD5：1A13ADE0178082432F90DF951A88842F",
+        "SHA1：AB7CD740E6CD495A69E3A90FCD7FB56BA0C5C62E"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso|5287520256|D6E4FE0BA5FD8A2F22FC9C0326481791|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "magnet:?xt=urn:btih:b84e74c1dbcc88a02c5b24a6f84383f353a2e1dd&dn=zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso&xl=5287520256",
+          "download_type": "BT："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-11/win11-ltsc"
+}

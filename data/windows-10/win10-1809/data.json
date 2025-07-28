@@ -1,0 +1,89 @@
+{
+  "title": "Windows 10 1809",
+  "intro_text": "发行时间：2018年11月13日主流支持结束日期：2020年5月11日扩展支持结束日期：2021年5月11日内核版本号：Windows NT 10.0消费者版本：内含家庭版、家庭单语言版、专业版、教育版。商业版：内含企业版、专业版、专业教育版、专业工作站版、教育版。",
+  "versions": [
+    {
+      "version_text": "所有版本，点击版本按钮切换",
+      "attributes": [],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_1809_updated_sept_2019_x64_dvd_f873d037.iso|5444462592|BF3C1964141BCF6ACD40EC6AAF2A0940|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_edition_version_1809_updated_may_2019_x86_dvd_9f17e077.iso|3835998208|F8656A31D9E82F13D46ABEA678F770A2|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_1809_updated_sept_2019_x64_dvd_ecb7b897.iso|5571874816|915CADD0234B759920255AA8CC5984FB|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_edition_version_1809_updated_may_2019_x86_dvd_42f826ad.iso|3925567488|663AEA7751416BC598D05505E14B9A9D|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 1809 简体中文 64位 （2019.09更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_editions_version_1809_updated_sept_2019_x64_dvd_f873d037.iso",
+        "文件大小：5.07GB",
+        "发布时间：2019-09-17",
+        "SHA1：975f1b3acbeece56b5ad1526345a0657109f4043"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_1809_updated_sept_2019_x64_dvd_f873d037.iso|5444462592|BF3C1964141BCF6ACD40EC6AAF2A0940|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 1809 简体中文 32位 （2019.05更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_edition_version_1809_updated_may_2019_x86_dvd_9f17e077.iso",
+        "文件大小：3.57GB",
+        "发布时间：2019-05-27",
+        "SHA1：9a4d2fd78d91211f13a03521a3493175a2ae9a8f"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_edition_version_1809_updated_may_2019_x86_dvd_9f17e077.iso|3835998208|F8656A31D9E82F13D46ABEA678F770A2|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 1809 简体中文 64位 （2019.09更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_editions_version_1809_updated_sept_2019_x64_dvd_ecb7b897.iso",
+        "文件大小：5.19GB",
+        "发布时间：2019-09-17",
+        "SHA1：86bb431c68f38aeecaf925c8c42d130f5e747c02"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_1809_updated_sept_2019_x64_dvd_ecb7b897.iso|5571874816|915CADD0234B759920255AA8CC5984FB|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 1809 简体中文 32位 （2019.05更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_edition_version_1809_updated_may_2019_x86_dvd_42f826ad.iso",
+        "文件大小：3.66GB",
+        "发布时间：2019-05-27",
+        "SHA1：c05463bcc79d9412a30243238f02a9f32a08b4c3"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_edition_version_1809_updated_may_2019_x86_dvd_42f826ad.iso|3925567488|663AEA7751416BC598D05505E14B9A9D|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-10/win10-1809/"
+}

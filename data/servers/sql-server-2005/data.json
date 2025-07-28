@@ -1,0 +1,132 @@
+{
+  "title": "SQL SERVER 2005",
+  "intro_text": "发行时间：2006年1月14日主流支持结束日期：2011年4月12日扩展支持结束日期：2016年4月12日提供开发版、企业版、标准版、免费版等各版本下载。",
+  "versions": [
+    {
+      "version_text": "SQL 2005 开发版 简体中文",
+      "attributes": [
+        "文件名：cs_sql_2005_dev_all_dvd.iso",
+        "文件大小：1.74GB",
+        "发布时间：2006-01-20",
+        "SHA1：C3F8670D61BF3CF017209E5E719C3391D19A5D0D"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_dev_all_dvd.iso|1870581760|25D3E5CEFB407E7CA1036BE303AC4643|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_ent_x64_dvd.iso|1019222016|10FD11133A3E70DAD665BEDC1090AD28|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_ent_x86_dvd.iso|972310528|4CEEF4B959894FD78C8F8416B4BA533E|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_std_x86_cd1.iso|441892864|CAABF976F9B4591007B6157814661988|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_std_x86_cd2.iso|635772928|BA2AEEF53DC9F3CCD55F27220446708B|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2005_express_edition_with_advanced_services_service_pack_4_x86.exe|279297888|3AC9C4620D654F57E5F10C332000C386|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2005 开发版 简体中文",
+      "attributes": [
+        "文件名：cs_sql_2005_dev_all_dvd.iso",
+        "文件大小：1.74GB",
+        "发布时间：2006-01-20",
+        "SHA1：C3F8670D61BF3CF017209E5E719C3391D19A5D0D"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_dev_all_dvd.iso|1870581760|25D3E5CEFB407E7CA1036BE303AC4643|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2005 企业版 简体中文 64位",
+      "attributes": [
+        "文件名：cs_sql_2005_ent_x64_dvd.iso",
+        "文件大小：972.01MB",
+        "发布时间：2006-01-20",
+        "SHA1：D72C3624C417218CD26FAE8A626CE98DE9F370DC"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_ent_x64_dvd.iso|1019222016|10FD11133A3E70DAD665BEDC1090AD28|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2005 企业版 简体中文 32位",
+      "attributes": [
+        "文件名：cs_sql_2005_ent_x86_dvd.iso",
+        "文件大小：927.27MB",
+        "发布时间：2006-01-20",
+        "SHA1：8A08C9B92FFCA3B4AF5569171025487CDAE6A7C7"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_ent_x86_dvd.iso|972310528|4CEEF4B959894FD78C8F8416B4BA533E|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2005 标准版 简体中文 32位 CD1",
+      "attributes": [
+        "文件名：cs_sql_2005_std_x86_cd1.iso",
+        "文件大小：421.42MB",
+        "发布时间：2006-01-19",
+        "SHA1：F2E070D2252F227FA6CF445ABC5A74C8C8705401"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_std_x86_cd1.iso|441892864|CAABF976F9B4591007B6157814661988|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2005 标准版 简体中文 32位 CD2",
+      "attributes": [
+        "文件名：cs_sql_2005_std_x86_cd2.iso",
+        "文件大小：606.32MB",
+        "发布时间：2006-01-19",
+        "SHA1：CAC7672BED6347D473E92D909C162544AB3768DC"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cs_sql_2005_std_x86_cd2.iso|635772928|BA2AEEF53DC9F3CCD55F27220446708B|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2005 免费版 简体中文 32位",
+      "attributes": [
+        "文件名：cn_sql_server_2005_express_edition_with_advanced_services_service_pack_4_x86.exe",
+        "文件大小：266.36MB",
+        "发布时间：2012-02-06",
+        "SHA1：44C40BE79693BDCE84C6FCAAD168178A388A77CC"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2005_express_edition_with_advanced_services_service_pack_4_x86.exe|279297888|3AC9C4620D654F57E5F10C332000C386|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/servers/sql-server-2005"
+}

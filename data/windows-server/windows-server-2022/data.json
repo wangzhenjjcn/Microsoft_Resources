@@ -1,0 +1,37 @@
+{
+  "title": "Windows Server 2022",
+  "intro_text": "发行时间：2021年8月18日主流支持结束日期：2026年10月13日扩展支持结束日期：2031年10月14日内核版本号：Windows NT 10.0",
+  "versions": [
+    {
+      "version_text": "Windows Server 2022 标准版、数据中心版多合一 简体中文",
+      "attributes": [
+        "文件名：zh-cn_windows_server_2022_x64_dvd_6c73507d.iso",
+        "文件大小：5.41GB",
+        "发布时间：2021-8-18",
+        "SHA1：0DF46441DD01F99459FB75BDB732E7904900A0D7"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_server_2022_x64_dvd_6c73507d.iso|5805221888|8D72A80C08CEFD49AB831C0AD08EE69C|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows Server 2022 标准版、数据中心版多合一 简体中文",
+      "attributes": [
+        "文件名：zh-cn_windows_server_2022_x64_dvd_6c73507d.iso",
+        "文件大小：5.41GB",
+        "发布时间：2021-8-18",
+        "SHA1：0DF46441DD01F99459FB75BDB732E7904900A0D7"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_server_2022_x64_dvd_6c73507d.iso|5805221888|8D72A80C08CEFD49AB831C0AD08EE69C|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-server/windows-server-2022"
+}

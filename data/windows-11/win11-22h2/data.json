@@ -1,0 +1,59 @@
+{
+  "title": "Windows 11 22H2",
+  "intro_text": "发行时间：2022年09月20日主流支持结束日期：2025年10月14日扩展支持结束日期：2025年10月14日内核版本号：Windows NT 10.0Windows 11主要分为两个大版本：消费者版本和商业版。消费者版本：内含家庭版、家庭单语言版、教育版、专业版、专业教育版、专业工作站版。商业版：内含企业版、教育版、专业版、专业教育版、专业工作站版。",
+  "versions": [
+    {
+      "version_text": "Windows 11 22H2 商业版 简体中文 64位 (2022.09更新)",
+      "attributes": [
+        "文件名：zh-cn_windows_11_business_editions_version_22h2_x64_dvd_914b57a5.iso",
+        "文件大小：5.05GB",
+        "发布时间：2022-09-20",
+        "MD5：04C3FB277AA18239120F4B802186081C",
+        "SHA1：6A22C7381E40857EA56D98D4BC57B1A2CFB257FE"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_business_editions_version_22h2_x64_dvd_914b57a5.iso|5417975808|5326A6A7D629AE8F6AE00C776CC2B9C5|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_consumer_editions_version_22h2_x64_dvd_59cfe6ee.iso|5517127680|C48C34A0CF65D363B68295BDD5A89252|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 11 22H2 商业版 简体中文 64位 (2022.09更新)",
+      "attributes": [
+        "文件名：zh-cn_windows_11_business_editions_version_22h2_x64_dvd_914b57a5.iso",
+        "文件大小：5.05GB",
+        "发布时间：2022-09-20",
+        "MD5：04C3FB277AA18239120F4B802186081C",
+        "SHA1：6A22C7381E40857EA56D98D4BC57B1A2CFB257FE"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_business_editions_version_22h2_x64_dvd_914b57a5.iso|5417975808|5326A6A7D629AE8F6AE00C776CC2B9C5|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 11 22H2 消费者版本 简体中文 64位 (2022.09更新)",
+      "attributes": [
+        "文件名：zh-cn_windows_11_consumer_editions_version_22h2_x64_dvd_59cfe6ee.iso",
+        "文件大小：5.14GB",
+        "发布时间：2022-09-20",
+        "MD5：506B5563FDA4402E3DCB846927612414",
+        "SHA1：EDA6B80B5E52567D22C862884D7C987C316AF844"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_11_consumer_editions_version_22h2_x64_dvd_59cfe6ee.iso|5517127680|C48C34A0CF65D363B68295BDD5A89252|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-11/win11-22h2"
+}

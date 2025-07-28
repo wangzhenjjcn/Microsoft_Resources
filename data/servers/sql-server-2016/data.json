@@ -1,0 +1,74 @@
+{
+  "title": "SQL SERVER 2016",
+  "intro_text": "发行时间：2016年6月1日主流支持结束日期：2021年7月13日扩展支持结束日期：2026年7月14日提供开发版、企业版、免费版等各版本下载。",
+  "versions": [
+    {
+      "version_text": "SQL 2016 开发版 集成SP1 简体中文 64位",
+      "attributes": [
+        "文件名：cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso",
+        "文件大小：2.76GB",
+        "发布时间：2016-12-01",
+        "SHA1：D4A73F491DF47AF46C933D711259EA099C1A8537"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso|2959722496|9D6964555409F8E4BBFD3439E15921E9|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2016_enterprise_with_service_pack_1_x64_dvd_9538279.iso|2959722496|E3F5E07B85F0AB42CA115CE1D6CA27D1|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "https://www.microsoft.com/zh-cn/download/details.aspx?id=56840",
+          "download_type": "微软官方下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2016 开发版 集成SP1 简体中文 64位",
+      "attributes": [
+        "文件名：cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso",
+        "文件大小：2.76GB",
+        "发布时间：2016-12-01",
+        "SHA1：D4A73F491DF47AF46C933D711259EA099C1A8537"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2016_developer_with_service_pack_1_x64_dvd_9547670.iso|2959722496|9D6964555409F8E4BBFD3439E15921E9|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2016 企业版 集成SP1 简体中文 64位",
+      "attributes": [
+        "文件名：cn_sql_server_2016_enterprise_with_service_pack_1_x64_dvd_9538279.iso",
+        "文件大小：2.76GB",
+        "发布时间：2016-12-01",
+        "SHA1：1FF48C75E4892D54E14F8901FFFCBE193CAF9891"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_sql_server_2016_enterprise_with_service_pack_1_x64_dvd_9538279.iso|2959722496|E3F5E07B85F0AB42CA115CE1D6CA27D1|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "SQL 2016 免费版 集成SP1 简体中文",
+      "attributes": [
+        "文件名：SQLServer2016-SSEI-Expr.exe",
+        "文件大小：5.6 MB",
+        "发布时间：2020-3-16"
+      ],
+      "downloads": [
+        {
+          "download_url": "https://www.microsoft.com/zh-cn/download/details.aspx?id=56840",
+          "download_type": "微软官方下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/servers/sql-server-2016"
+}

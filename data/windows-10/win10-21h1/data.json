@@ -1,0 +1,89 @@
+{
+  "title": "Windows 10 21H1",
+  "intro_text": "发行时间：2021年5月18日主流支持结束日期：2022年12月13日扩展支持结束日期：2022年12月13日内核版本号：Windows NT 10.0消费者版本：内含家庭版、家庭单语言版、专业版、教育版。商业版：内含企业版、专业版、专业教育版、专业工作站版、教育版。",
+  "versions": [
+    {
+      "version_text": "所有版本，点击版本按钮切换",
+      "attributes": [],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x64_dvd_023d42d3.iso|5709488128|B09B1BA01F76C80E2BD8E798C9E89E7D|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x86_dvd_3a0314c9.iso|4140279808|01B1F60FBCCC8BA61F0208D0F4957949|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_consumer_editions_version_21h1_updated_sep_2021_x64_dvd_991b822f.iso|5823694848|AC1C0056604BB66643A25360AF585A7E|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_consumer_editions_version_21h1_updated_sep_2021_x86_dvd_b64c8b01.iso|4221437952|9E85D3EA2D467AB36A9B0DDD6A7BADE3|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 21H1 简体中文 64位 （2021.09更新）",
+      "attributes": [
+        "文件名：zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x64_dvd_023d42d3.iso",
+        "文件大小：5.32GB",
+        "发布时间：2021-09-21",
+        "SHA1：3A656F7209547468FBB5B794D78F216C7603E16C"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x64_dvd_023d42d3.iso|5709488128|B09B1BA01F76C80E2BD8E798C9E89E7D|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 21H1 简体中文 32位 （2021.09更新）",
+      "attributes": [
+        "文件名：zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x86_dvd_3a0314c9.iso",
+        "文件大小：3.86GB",
+        "发布时间：2021-09-21",
+        "SHA1：4DBD9B92E185D3A07EB802FEE2FB42FBCE707A0A"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_business_editions_version_21h1_updated_sep_2021_x86_dvd_3a0314c9.iso|4140279808|01B1F60FBCCC8BA61F0208D0F4957949|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 21H1 简体中文 64位 （2021.09更新）",
+      "attributes": [
+        "文件名：zh-cn_windows_10_consumer_editions_version_21h1_updated_sep_2021_x64_dvd_991b822f.iso",
+        "文件大小：5.42GB",
+        "发布时间：2021-09-21",
+        "SHA1：38497D3F479F6A31775E55256D02D224D2BC9F30"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_consumer_editions_version_21h1_updated_sep_2021_x64_dvd_991b822f.iso|5823694848|AC1C0056604BB66643A25360AF585A7E|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 21H1 简体中文 32位 （2021.09更新）",
+      "attributes": [
+        "文件名：zh-cn_windows_10_consumer_editions_version_21h1_updated_sep_2021_x86_dvd_b64c8b01.iso",
+        "文件大小：3.93GB",
+        "发布时间：2021-09-21",
+        "SHA1：13F7FAA8C3C56CC2D57A150AD548619229142E68"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|zh-cn_windows_10_consumer_editions_version_21h1_updated_sep_2021_x86_dvd_b64c8b01.iso|4221437952|9E85D3EA2D467AB36A9B0DDD6A7BADE3|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-10/win10-21h1/"
+}

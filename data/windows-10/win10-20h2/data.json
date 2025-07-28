@@ -1,0 +1,89 @@
+{
+  "title": "Windows 10 20H2",
+  "intro_text": "发行时间：2020年10月20日主流支持结束日期：2023年5月9日扩展支持结束日期：2023年5月9日内核版本号：Windows NT 10.0消费者版本：内含家庭版、家庭单语言版、专业版、教育版。商业版：内含企业版、专业版、专业教育版、专业工作站版、教育版。",
+  "versions": [
+    {
+      "version_text": "所有版本，点击版本按钮切换",
+      "attributes": [],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_20h2_updated_april_2021_x64_dvd_0a0fc490.iso|6165831680|9B4B918A840F845A43DD476FCEC3E421|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_20h2_updated_april_2021_x86_dvd_0e94b33c.iso|4538742784|A738DBE77137DB9AECD8C5650001174B|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_20h2_updated_april_2021_x64_dvd_ace7e59c.iso|6330411008|94F8A6EF403063C48EC5267133B7A3E1|/",
+          "download_type": "迅雷下载："
+        },
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_20h2_updated_april_2021_x86_dvd_f483b6ca.iso|4643172352|355CEA37FAD577D7283AB3739E1F7D6F|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 20H2 简体中文 64位 （2021.04更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_editions_version_20h2_updated_april_2021_x64_dvd_0a0fc490.iso",
+        "文件大小：5.74GB",
+        "发布时间：2021-04-20",
+        "SHA1：DF9154C57636C65EB44DB5F2D520196FEAF55DB8"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_20h2_updated_april_2021_x64_dvd_0a0fc490.iso|6165831680|9B4B918A840F845A43DD476FCEC3E421|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 商业版 20H2 简体中文 32位 （2021.04更新）",
+      "attributes": [
+        "文件名：cn_windows_10_business_editions_version_20h2_updated_april_2021_x86_dvd_0e94b33c.iso",
+        "文件大小：4.23GB",
+        "发布时间：2021-04-20",
+        "SHA1：52F79CEEE2184976478767F6C0E6CDFB60AC0064"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_business_editions_version_20h2_updated_april_2021_x86_dvd_0e94b33c.iso|4538742784|A738DBE77137DB9AECD8C5650001174B|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 20H2 简体中文 64位 （2021.04更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_editions_version_20h2_updated_april_2021_x64_dvd_ace7e59c.iso",
+        "文件大小：5.9GB",
+        "发布时间：2021-04-20",
+        "SHA1：5B0AC1265A339D1F72DB41A21283EB2839642020"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_20h2_updated_april_2021_x64_dvd_ace7e59c.iso|6330411008|94F8A6EF403063C48EC5267133B7A3E1|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    },
+    {
+      "version_text": "Windows 10 消费者版本 20H2 简体中文 32位 （2021.04更新）",
+      "attributes": [
+        "文件名：cn_windows_10_consumer_editions_version_20h2_updated_april_2021_x86_dvd_f483b6ca.iso",
+        "文件大小：4.32GB",
+        "发布时间：2021-04-20",
+        "SHA1：8210466DCBF591A63E7928779DEF08E17A362CD8"
+      ],
+      "downloads": [
+        {
+          "download_url": "ed2k://|file|cn_windows_10_consumer_editions_version_20h2_updated_april_2021_x86_dvd_f483b6ca.iso|4643172352|355CEA37FAD577D7283AB3739E1F7D6F|/",
+          "download_type": "迅雷下载："
+        }
+      ]
+    }
+  ],
+  "url": "https://www.imsdn.cn/windows-10/win10-20h2/"
+}
