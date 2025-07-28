@@ -25,6 +25,37 @@
             padding-bottom: 10px;
             text-align: center;
         }
+        .search-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #0078d4;
+        }
+        .search-options {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .search-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .search-option input[type="checkbox"] {
+            margin: 0;
+        }
         .category {
             margin: 30px 0;
             border: 1px solid #ddd;
@@ -56,6 +87,9 @@
         .link-item:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .link-item.hidden {
+            display: none;
         }
         .link-title {
             font-weight: bold;
@@ -97,11 +131,35 @@
             font-weight: bold;
             color: #0078d4;
         }
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Microsoft 资源下载中心</h1>
+        
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-input" placeholder="搜索资源..." onkeyup="filterItems()">
+            <div class="search-options">
+                <div class="search-option">
+                    <input type="checkbox" id="searchTitle" checked>
+                    <label for="searchTitle">标题</label>
+                </div>
+                <div class="search-option">
+                    <input type="checkbox" id="searchIntro" checked>
+                    <label for="searchIntro">介绍</label>
+                </div>
+                <div class="search-option">
+                    <input type="checkbox" id="searchDetails" checked>
+                    <label for="searchDetails">详情</label>
+                </div>
+            </div>
+        </div>
         
         <div class="stats">
             <div class="stats-number">59</div>
@@ -114,45 +172,38 @@
             <div class="category-content">
                 <div class="link-grid">
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Office 2007" data-url="https://www.imsdn.cn/applications/office-2007" data-path="applications/office-2007">
                         <div class="link-title">Office 2007</div>
-                        <div class="link-url">https://www.imsdn.cn/applications/office-2007</div>
                         <a href="applications/office-2007/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Office 2010" data-url="https://www.imsdn.cn/applications/office-2010" data-path="applications/office-2010">
                         <div class="link-title">Office 2010</div>
-                        <div class="link-url">https://www.imsdn.cn/applications/office-2010</div>
                         <a href="applications/office-2010/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Office 2013" data-url="https://www.imsdn.cn/applications/office-2013" data-path="applications/office-2013">
                         <div class="link-title">Office 2013</div>
-                        <div class="link-url">https://www.imsdn.cn/applications/office-2013</div>
                         <a href="applications/office-2013/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Office 2016" data-url="https://www.imsdn.cn/applications/office-2016" data-path="applications/office-2016">
                         <div class="link-title">Office 2016</div>
-                        <div class="link-url">https://www.imsdn.cn/applications/office-2016</div>
                         <a href="applications/office-2016/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Office 2019" data-url="https://www.imsdn.cn/applications/office-2019" data-path="applications/office-2019">
                         <div class="link-title">Office 2019</div>
-                        <div class="link-url">https://www.imsdn.cn/applications/office-2019</div>
                         <a href="applications/office-2019/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Office 2021" data-url="https://www.imsdn.cn/applications/office-2021" data-path="applications/office-2021">
                         <div class="link-title">Office 2021</div>
-                        <div class="link-url">https://www.imsdn.cn/applications/office-2021</div>
                         <a href="applications/office-2021/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Office 2024" data-url="https://www.imsdn.cn/applications/office-2024" data-path="applications/office-2024">
                         <div class="link-title">Office 2024</div>
-                        <div class="link-url">https://www.imsdn.cn/applications/office-2024</div>
                         <a href="applications/office-2024/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
@@ -165,27 +216,23 @@
             <div class="category-content">
                 <div class="link-grid">
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows 7" data-url="https://www.imsdn.cn/operating-systems/windows-7" data-path="operating-systems/windows-7">
                         <div class="link-title">Windows 7</div>
-                        <div class="link-url">https://www.imsdn.cn/operating-systems/windows-7</div>
                         <a href="operating-systems/windows-7/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows 8" data-url="https://www.imsdn.cn/operating-systems/windows-8" data-path="operating-systems/windows-8">
                         <div class="link-title">Windows 8</div>
-                        <div class="link-url">https://www.imsdn.cn/operating-systems/windows-8</div>
                         <a href="operating-systems/windows-8/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows 8 1" data-url="https://www.imsdn.cn/operating-systems/windows-8-1" data-path="operating-systems/windows-8-1">
                         <div class="link-title">Windows 8 1</div>
-                        <div class="link-url">https://www.imsdn.cn/operating-systems/windows-8-1</div>
                         <a href="operating-systems/windows-8-1/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Xp" data-url="https://www.imsdn.cn/operating-systems/windows-xp" data-path="operating-systems/windows-xp">
                         <div class="link-title">Windows Xp</div>
-                        <div class="link-url">https://www.imsdn.cn/operating-systems/windows-xp</div>
                         <a href="operating-systems/windows-xp/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
@@ -198,39 +245,33 @@
             <div class="category-content">
                 <div class="link-grid">
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Sql Server 2005" data-url="https://www.imsdn.cn/servers/sql-server-2005" data-path="servers/sql-server-2005">
                         <div class="link-title">Sql Server 2005</div>
-                        <div class="link-url">https://www.imsdn.cn/servers/sql-server-2005</div>
                         <a href="servers/sql-server-2005/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Sql Server 2008 R2" data-url="https://www.imsdn.cn/servers/sql-server-2008-r2" data-path="servers/sql-server-2008-r2">
                         <div class="link-title">Sql Server 2008 R2</div>
-                        <div class="link-url">https://www.imsdn.cn/servers/sql-server-2008-r2</div>
                         <a href="servers/sql-server-2008-r2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Sql Server 2012" data-url="https://www.imsdn.cn/servers/sql-server-2012" data-path="servers/sql-server-2012">
                         <div class="link-title">Sql Server 2012</div>
-                        <div class="link-url">https://www.imsdn.cn/servers/sql-server-2012</div>
                         <a href="servers/sql-server-2012/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Sql Server 2014" data-url="https://www.imsdn.cn/servers/sql-server-2014" data-path="servers/sql-server-2014">
                         <div class="link-title">Sql Server 2014</div>
-                        <div class="link-url">https://www.imsdn.cn/servers/sql-server-2014</div>
                         <a href="servers/sql-server-2014/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Sql Server 2016" data-url="https://www.imsdn.cn/servers/sql-server-2016" data-path="servers/sql-server-2016">
                         <div class="link-title">Sql Server 2016</div>
-                        <div class="link-url">https://www.imsdn.cn/servers/sql-server-2016</div>
                         <a href="servers/sql-server-2016/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Sql Server 2019" data-url="https://www.imsdn.cn/servers/sql-server-2019" data-path="servers/sql-server-2019">
                         <div class="link-title">Sql Server 2019</div>
-                        <div class="link-url">https://www.imsdn.cn/servers/sql-server-2019</div>
                         <a href="servers/sql-server-2019/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
@@ -243,165 +284,138 @@
             <div class="category-content">
                 <div class="link-grid">
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1511" data-url="https://www.imsdn.cn/windows-10/win10-1511" data-path="windows-10/win10-1511">
                         <div class="link-title">Win10 1511</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1511</div>
                         <a href="windows-10/win10-1511/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1511" data-url="https://www.imsdn.cn/windows-10/win10-1511/" data-path="windows-10/win10-1511">
                         <div class="link-title">Win10 1511</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1511/</div>
                         <a href="windows-10/win10-1511/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1607" data-url="https://www.imsdn.cn/windows-10/win10-1607" data-path="windows-10/win10-1607">
                         <div class="link-title">Win10 1607</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1607</div>
                         <a href="windows-10/win10-1607/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1607" data-url="https://www.imsdn.cn/windows-10/win10-1607/" data-path="windows-10/win10-1607">
                         <div class="link-title">Win10 1607</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1607/</div>
                         <a href="windows-10/win10-1607/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1703" data-url="https://www.imsdn.cn/windows-10/win10-1703" data-path="windows-10/win10-1703">
                         <div class="link-title">Win10 1703</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1703</div>
                         <a href="windows-10/win10-1703/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1703" data-url="https://www.imsdn.cn/windows-10/win10-1703/" data-path="windows-10/win10-1703">
                         <div class="link-title">Win10 1703</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1703/</div>
                         <a href="windows-10/win10-1703/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1709" data-url="https://www.imsdn.cn/windows-10/win10-1709" data-path="windows-10/win10-1709">
                         <div class="link-title">Win10 1709</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1709</div>
                         <a href="windows-10/win10-1709/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1709" data-url="https://www.imsdn.cn/windows-10/win10-1709/" data-path="windows-10/win10-1709">
                         <div class="link-title">Win10 1709</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1709/</div>
                         <a href="windows-10/win10-1709/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1803" data-url="https://www.imsdn.cn/windows-10/win10-1803" data-path="windows-10/win10-1803">
                         <div class="link-title">Win10 1803</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1803</div>
                         <a href="windows-10/win10-1803/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1803" data-url="https://www.imsdn.cn/windows-10/win10-1803/" data-path="windows-10/win10-1803">
                         <div class="link-title">Win10 1803</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1803/</div>
                         <a href="windows-10/win10-1803/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1809" data-url="https://www.imsdn.cn/windows-10/win10-1809" data-path="windows-10/win10-1809">
                         <div class="link-title">Win10 1809</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1809</div>
                         <a href="windows-10/win10-1809/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1809" data-url="https://www.imsdn.cn/windows-10/win10-1809/" data-path="windows-10/win10-1809">
                         <div class="link-title">Win10 1809</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1809/</div>
                         <a href="windows-10/win10-1809/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1903" data-url="https://www.imsdn.cn/windows-10/win10-1903" data-path="windows-10/win10-1903">
                         <div class="link-title">Win10 1903</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1903</div>
                         <a href="windows-10/win10-1903/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1903" data-url="https://www.imsdn.cn/windows-10/win10-1903/" data-path="windows-10/win10-1903">
                         <div class="link-title">Win10 1903</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1903/</div>
                         <a href="windows-10/win10-1903/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1909" data-url="https://www.imsdn.cn/windows-10/win10-1909" data-path="windows-10/win10-1909">
                         <div class="link-title">Win10 1909</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1909</div>
                         <a href="windows-10/win10-1909/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 1909" data-url="https://www.imsdn.cn/windows-10/win10-1909/" data-path="windows-10/win10-1909">
                         <div class="link-title">Win10 1909</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-1909/</div>
                         <a href="windows-10/win10-1909/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 2004" data-url="https://www.imsdn.cn/windows-10/win10-2004" data-path="windows-10/win10-2004">
                         <div class="link-title">Win10 2004</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-2004</div>
                         <a href="windows-10/win10-2004/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 2004" data-url="https://www.imsdn.cn/windows-10/win10-2004/" data-path="windows-10/win10-2004">
                         <div class="link-title">Win10 2004</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-2004/</div>
                         <a href="windows-10/win10-2004/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 20H2" data-url="https://www.imsdn.cn/windows-10/win10-20h2" data-path="windows-10/win10-20h2">
                         <div class="link-title">Win10 20H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-20h2</div>
                         <a href="windows-10/win10-20h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 20H2" data-url="https://www.imsdn.cn/windows-10/win10-20h2/" data-path="windows-10/win10-20h2">
                         <div class="link-title">Win10 20H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-20h2/</div>
                         <a href="windows-10/win10-20h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 21H1" data-url="https://www.imsdn.cn/windows-10/win10-21h1" data-path="windows-10/win10-21h1">
                         <div class="link-title">Win10 21H1</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-21h1</div>
                         <a href="windows-10/win10-21h1/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 21H1" data-url="https://www.imsdn.cn/windows-10/win10-21h1/" data-path="windows-10/win10-21h1">
                         <div class="link-title">Win10 21H1</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-21h1/</div>
                         <a href="windows-10/win10-21h1/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 21H2" data-url="https://www.imsdn.cn/windows-10/win10-21h2" data-path="windows-10/win10-21h2">
                         <div class="link-title">Win10 21H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-21h2</div>
                         <a href="windows-10/win10-21h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 21H2" data-url="https://www.imsdn.cn/windows-10/win10-21h2/" data-path="windows-10/win10-21h2">
                         <div class="link-title">Win10 21H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-21h2/</div>
                         <a href="windows-10/win10-21h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 22H2" data-url="https://www.imsdn.cn/windows-10/win10-22h2" data-path="windows-10/win10-22h2">
                         <div class="link-title">Win10 22H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-22h2</div>
                         <a href="windows-10/win10-22h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 Ltsc" data-url="https://www.imsdn.cn/windows-10/win10-ltsc" data-path="windows-10/win10-ltsc">
                         <div class="link-title">Win10 Ltsc</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-ltsc</div>
                         <a href="windows-10/win10-ltsc/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win10 Ltsc" data-url="https://www.imsdn.cn/windows-10/win10-ltsc/" data-path="windows-10/win10-ltsc">
                         <div class="link-title">Win10 Ltsc</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-10/win10-ltsc/</div>
                         <a href="windows-10/win10-ltsc/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
@@ -414,45 +428,38 @@
             <div class="category-content">
                 <div class="link-grid">
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win11 21H2" data-url="https://www.imsdn.cn/windows-11/win11-21h2" data-path="windows-11/win11-21h2">
                         <div class="link-title">Win11 21H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-11/win11-21h2</div>
                         <a href="windows-11/win11-21h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win11 22H2" data-url="https://www.imsdn.cn/windows-11/win11-22h2" data-path="windows-11/win11-22h2">
                         <div class="link-title">Win11 22H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-11/win11-22h2</div>
                         <a href="windows-11/win11-22h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win11 23H2" data-url="https://www.imsdn.cn/windows-11/win11-23h2" data-path="windows-11/win11-23h2">
                         <div class="link-title">Win11 23H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-11/win11-23h2</div>
                         <a href="windows-11/win11-23h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win11 24H2" data-url="https://www.imsdn.cn/windows-11/win11-24h2" data-path="windows-11/win11-24h2">
                         <div class="link-title">Win11 24H2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-11/win11-24h2</div>
                         <a href="windows-11/win11-24h2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win11 Arm" data-url="https://www.imsdn.cn/windows-11/win11-arm" data-path="windows-11/win11-arm">
                         <div class="link-title">Win11 Arm</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-11/win11-arm</div>
                         <a href="windows-11/win11-arm/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win11 Ltsc" data-url="https://www.imsdn.cn/windows-11/win11-ltsc" data-path="windows-11/win11-ltsc">
                         <div class="link-title">Win11 Ltsc</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-11/win11-ltsc</div>
                         <a href="windows-11/win11-ltsc/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Win11 Rtm" data-url="https://www.imsdn.cn/windows-11/win11-rtm" data-path="windows-11/win11-rtm">
                         <div class="link-title">Win11 Rtm</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-11/win11-rtm</div>
                         <a href="windows-11/win11-rtm/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
@@ -465,51 +472,43 @@
             <div class="category-content">
                 <div class="link-grid">
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2008" data-url="https://www.imsdn.cn/windows-server/windows-server-2008" data-path="windows-server/windows-server-2008">
                         <div class="link-title">Windows Server 2008</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2008</div>
                         <a href="windows-server/windows-server-2008/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2008 R2" data-url="https://www.imsdn.cn/windows-server/windows-server-2008-r2" data-path="windows-server/windows-server-2008-r2">
                         <div class="link-title">Windows Server 2008 R2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2008-r2</div>
                         <a href="windows-server/windows-server-2008-r2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2012" data-url="https://www.imsdn.cn/windows-server/windows-server-2012" data-path="windows-server/windows-server-2012">
                         <div class="link-title">Windows Server 2012</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2012</div>
                         <a href="windows-server/windows-server-2012/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2012 R2" data-url="https://www.imsdn.cn/windows-server/windows-server-2012-r2" data-path="windows-server/windows-server-2012-r2">
                         <div class="link-title">Windows Server 2012 R2</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2012-r2</div>
                         <a href="windows-server/windows-server-2012-r2/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2016" data-url="https://www.imsdn.cn/windows-server/windows-server-2016" data-path="windows-server/windows-server-2016">
                         <div class="link-title">Windows Server 2016</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2016</div>
                         <a href="windows-server/windows-server-2016/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2019" data-url="https://www.imsdn.cn/windows-server/windows-server-2019" data-path="windows-server/windows-server-2019">
                         <div class="link-title">Windows Server 2019</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2019</div>
                         <a href="windows-server/windows-server-2019/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2022" data-url="https://www.imsdn.cn/windows-server/windows-server-2022" data-path="windows-server/windows-server-2022">
                         <div class="link-title">Windows Server 2022</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2022</div>
                         <a href="windows-server/windows-server-2022/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
-                    <div class="link-item">
+                    <div class="link-item" data-title="Windows Server 2025" data-url="https://www.imsdn.cn/windows-server/windows-server-2025" data-path="windows-server/windows-server-2025">
                         <div class="link-title">Windows Server 2025</div>
-                        <div class="link-url">https://www.imsdn.cn/windows-server/windows-server-2025</div>
                         <a href="windows-server/windows-server-2025/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     
@@ -517,6 +516,57 @@
             </div>
         </div>
         
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            没有找到匹配的资源
+        </div>
     </div>
+
+    <script>
+        function filterItems() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const searchTitle = document.getElementById('searchTitle').checked;
+            const searchIntro = document.getElementById('searchIntro').checked;
+            const searchDetails = document.getElementById('searchDetails').checked;
+            
+            const items = document.querySelectorAll('.link-item');
+            let visibleCount = 0;
+            
+            items.forEach(item => {
+                const title = item.getAttribute('data-title').toLowerCase();
+                const url = item.getAttribute('data-url').toLowerCase();
+                const path = item.getAttribute('data-path').toLowerCase();
+                
+                let matches = false;
+                
+                if (searchTitle && (title.includes(searchTerm) || url.includes(searchTerm))) {
+                    matches = true;
+                }
+                
+                if (searchIntro && (title.includes(searchTerm) || url.includes(searchTerm))) {
+                    matches = true;
+                }
+                
+                if (searchDetails && (title.includes(searchTerm) || url.includes(searchTerm) || path.includes(searchTerm))) {
+                    matches = true;
+                }
+                
+                if (searchTerm === '' || matches) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+            
+            // 显示/隐藏"无结果"消息
+            const noResults = document.getElementById('noResults');
+            if (visibleCount === 0 && searchTerm !== '') {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
