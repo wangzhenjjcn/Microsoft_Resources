@@ -96,7 +96,7 @@ def parse_url_to_path(url):
 
 def create_directory_structure(path):
     """创建目录结构"""
-    full_path = os.path.join('data', path)
+    full_path = os.path.join('docs', path)
     os.makedirs(full_path, exist_ok=True)
     return full_path
 
@@ -297,7 +297,7 @@ def generate_html_content(data):
 def generate_index_html():
     """生成汇总页面"""
     # 读取所有链接
-    with open('data/a.txt', 'r', encoding='utf-8') as f:
+    with open('docs/a.txt', 'r', encoding='utf-8') as f:
         links = [line.strip() for line in f.readlines()]
     
     # 按分类组织链接
@@ -352,6 +352,37 @@ def generate_index_html():
             padding-bottom: 10px;
             text-align: center;
         }}
+        .search-section {{
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }}
+        .search-input {{
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }}
+        .search-input:focus {{
+            outline: none;
+            border-color: #0078d4;
+        }}
+        .search-options {{
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }}
+        .search-option {{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }}
+        .search-option input[type="checkbox"] {{
+            margin: 0;
+        }}
         .category {{
             margin: 30px 0;
             border: 1px solid #ddd;
@@ -383,6 +414,9 @@ def generate_index_html():
         .link-item:hover {{
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }}
+        .link-item.hidden {{
+            display: none;
         }}
         .link-title {{
             font-weight: bold;
@@ -424,11 +458,35 @@ def generate_index_html():
             font-weight: bold;
             color: #0078d4;
         }}
+        .no-results {{
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 18px;
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Microsoft 资源下载中心</h1>
+        
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-input" placeholder="搜索资源..." onkeyup="filterItems()">
+            <div class="search-options">
+                <div class="search-option">
+                    <input type="checkbox" id="searchTitle" checked>
+                    <label for="searchTitle">标题</label>
+                </div>
+                <div class="search-option">
+                    <input type="checkbox" id="searchIntro" checked>
+                    <label for="searchIntro">介绍</label>
+                </div>
+                <div class="search-option">
+                    <input type="checkbox" id="searchDetails" checked>
+                    <label for="searchDetails">详情</label>
+                </div>
+            </div>
+        </div>
         
         <div class="stats">
             <div class="stats-number">{len(links)}</div>
@@ -441,9 +499,8 @@ def generate_index_html():
             <div class="category-content">
                 <div class="link-grid">
                     {''.join([f'''
-                    <div class="link-item">
+                    <div class="link-item" data-title="{parse_url_to_path(link).split('/')[-1].replace('-', ' ').title()}" data-url="{link}" data-path="{parse_url_to_path(link)}">
                         <div class="link-title">{parse_url_to_path(link).split('/')[-1].replace('-', ' ').title()}</div>
-                        <div class="link-url">{link}</div>
                         <a href="{parse_url_to_path(link)}/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
                     ''' for link in category_links])}
@@ -451,16 +508,67 @@ def generate_index_html():
             </div>
         </div>
         ''' for category_name, category_links in categories.items() if category_links])}
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            没有找到匹配的资源
+        </div>
     </div>
+
+    <script>
+        function filterItems() {{
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const searchTitle = document.getElementById('searchTitle').checked;
+            const searchIntro = document.getElementById('searchIntro').checked;
+            const searchDetails = document.getElementById('searchDetails').checked;
+            
+            const items = document.querySelectorAll('.link-item');
+            let visibleCount = 0;
+            
+            items.forEach(item => {{
+                const title = item.getAttribute('data-title').toLowerCase();
+                const url = item.getAttribute('data-url').toLowerCase();
+                const path = item.getAttribute('data-path').toLowerCase();
+                
+                let matches = false;
+                
+                if (searchTitle && (title.includes(searchTerm) || url.includes(searchTerm))) {{
+                    matches = true;
+                }}
+                
+                if (searchIntro && (title.includes(searchTerm) || url.includes(searchTerm))) {{
+                    matches = true;
+                }}
+                
+                if (searchDetails && (title.includes(searchTerm) || url.includes(searchTerm) || path.includes(searchTerm))) {{
+                    matches = true;
+                }}
+                
+                if (searchTerm === '' || matches) {{
+                    item.classList.remove('hidden');
+                    visibleCount++;
+                }} else {{
+                    item.classList.add('hidden');
+                }}
+            }});
+            
+            // 显示/隐藏"无结果"消息
+            const noResults = document.getElementById('noResults');
+            if (visibleCount === 0 && searchTerm !== '') {{
+                noResults.style.display = 'block';
+            }} else {{
+                noResults.style.display = 'none';
+            }}
+        }}
+    </script>
 </body>
 </html>
 """
     
     # 保存汇总页面
-    with open('data/index.html', 'w', encoding='utf-8') as f:
+    with open('docs/index.html', 'w', encoding='utf-8') as f:
         f.write(html_template)
     
-    print(f"汇总页面已生成: data/index.html")
+    print(f"汇总页面已生成: docs/index.html")
 
 def save_page_data(url):
     """保存页面数据"""
@@ -488,7 +596,7 @@ def save_page_data(url):
 
 def main():
     # 读取已采集的链接
-    with open('data/a.txt', 'r', encoding='utf-8') as f:
+    with open('docs/a.txt', 'r', encoding='utf-8') as f:
         links = [line.strip() for line in f.readlines()]
     
     print(f"开始处理 {len(links)} 个页面...")
