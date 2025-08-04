@@ -109,7 +109,8 @@ def extract_page_data(url):
 
 def parse_url_to_path(url):
     """将URL转换为本地文件路径"""
-    path = url.replace('https://www.imsdn.cn/', '')
+    # 处理两种URL格式
+    path = url.replace('https://windows.unblock.win/', '').replace('https://www.imsdn.cn/', '')
     if path.endswith('/'):
         path = path[:-1]
     return path
@@ -519,7 +520,7 @@ def generate_index_html():
             <div class="category-content">
                 <div class="link-grid">
                     {''.join([f'''
-                    <div class="link-item" data-title="{parse_url_to_path(link).split('/')[-1].replace('-', ' ').title()}" data-url="{link}" data-path="{parse_url_to_path(link)}">
+                    <div class="link-item" data-title="{parse_url_to_path(link).split('/')[-1].replace('-', ' ').title()}" data-url="{link.replace('https://www.imsdn.cn/', 'https://windows.unblock.win/')}" data-path="{parse_url_to_path(link)}">
                         <div class="link-title">{parse_url_to_path(link).split('/')[-1].replace('-', ' ').title()}</div>
                         <a href="{parse_url_to_path(link)}/index.html" class="link-btn" target="_blank">查看详情</a>
                     </div>
