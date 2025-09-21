@@ -394,10 +394,11 @@ def generate_index_html():
             path = parse_url_to_path(link)
             title_text = path.split('/')[-1].replace('-', ' ').title()
             href = f"{path}/index.html"
+            replaced_url = link.replace('https://www.imsdn.cn/', 'https://windows.unblock.win/')
             item_html = (
                 '\n                    <div class="link-item" '
                 f' data-title="{title_text}"'
-                f' data-url="{link.replace('https://www.imsdn.cn/', 'https://windows.unblock.win/')}"'
+                f' data-url="{replaced_url}"'
                 f' data-path="{path}">\n'
                 f'                        <div class="link-title">{title_text}</div>\n'
                 f'                        <a href="{href}" class="link-btn" target="_blank">查看详情</a>\n'
