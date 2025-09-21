@@ -142,6 +142,28 @@ def render_thunder_button(url: str) -> str:
         return ''
     return f'<button class="thunder-btn" onclick="copyToClipboard(&quot;{url}&quot;)">复制使用迅雷下载</button>'
 
+# 新增：复制按钮
+
+def render_copy_button(url: str) -> str:
+    if not url:
+        return ''
+    return f'<button class="copy-btn" onclick="copyToClipboard(&quot;{url}&quot;)">复制下载链接</button>'
+
+# 新增：渲染单个下载区块
+
+def render_download_section(download: dict) -> str:
+    url = download.get('download_url', '')
+    download_type = download.get('download_type', '下载')
+    return (
+        '<div class="download-section">\n'
+        f'    <div class="download-type">{download_type}</div>\n'
+        f'    <div class="download-url">{url}</div>\n'
+        f'    {render_copy_button(url)}\n'
+        f'    {render_http_button(url)}\n'
+        f'    {render_thunder_button(url)}\n'
+        '</div>\n'
+    )
+
 
 def generate_html_content(data):
     """生成HTML内容"""
@@ -152,6 +174,24 @@ def generate_html_content(data):
     title = data.get('title', '未知标题')
     intro_text = data.get('intro_text', '')
     versions = data.get('versions', [])
+
+    # 先构造版本区块 HTML，避免在 f-string 表达式内嵌套复杂列表推导
+    version_sections: list[str] = []
+    for version in versions:
+        version_text = version.get('version_text', '未知版本')
+        attributes_html = ''.join(f'<div>{attr}</div>' for attr in version.get('attributes', []))
+        downloads_html = ''.join(render_download_section(d) for d in version.get('downloads', []))
+        section_html = (
+            '\n        <div class="version">\n'
+            f'            <div class="version-header">{version_text}</div>\n'
+            '            <div class="version-attributes">\n'
+            f'                {attributes_html}\n'
+            '            </div>\n'
+            f'            {downloads_html}'
+            '        </div>\n'
+        )
+        version_sections.append(section_html)
+    versions_html = ''.join(version_sections)
     
     html_template = f"""
 <!DOCTYPE html>
@@ -265,23 +305,7 @@ def generate_html_content(data):
             {intro_text}
         </div>
         
-        {''.join([f'''
-        <div class="version">
-            <div class="version-header">{version.get('version_text', '未知版本')}</div>
-            <div class="version-attributes">
-                {''.join([f'<div>{attr}</div>' for attr in version.get('attributes', [])])}
-            </div>
-            {''.join([f'''
-            <div class="download-section">
-                <div class="download-type">{download.get('download_type', '下载')}</div>
-                <div class="download-url">{download.get('download_url', '')}</div>
-                <button class="copy-btn" onclick="copyToClipboard('{download.get('download_url', '')}')">复制下载链接</button>
-                {render_http_button(download.get('download_url', ''))}
-                {render_thunder_button(download.get('download_url', ''))}
-            </div>
-            ''' for download in version.get('downloads', [])])}
-        </div>
-        ''' for version in versions])}
+        {versions_html}
     </div>
 
     <script>
@@ -329,6 +353,7 @@ def generate_html_content(data):
 """
     return html_template
 
+
 def generate_index_html():
     """生成汇总页面"""
     # 读取所有链接
@@ -358,6 +383,40 @@ def generate_index_html():
             categories['Windows 11 系列'].append(link)
         elif 'windows-server/windows-server' in link:
             categories['Windows Server 系列'].append(link)
+    
+    # 构造分类 HTML
+    category_blocks: list[str] = []
+    for category_name, category_links in categories.items():
+        if not category_links:
+            continue
+        link_items: list[str] = []
+        for link in category_links:
+            path = parse_url_to_path(link)
+            title_text = path.split('/')[-1].replace('-', ' ').title()
+            href = f"{path}/index.html"
+            item_html = (
+                '\n                    <div class="link-item" '
+                f' data-title="{title_text}"'
+                f' data-url="{link.replace('https://www.imsdn.cn/', 'https://windows.unblock.win/')}"'
+                f' data-path="{path}">\n'
+                f'                        <div class="link-title">{title_text}</div>\n'
+                f'                        <a href="{href}" class="link-btn" target="_blank">查看详情</a>\n'
+                '                    </div>\n'
+            )
+            link_items.append(item_html)
+        links_html = ''.join(link_items)
+        category_html = (
+            '\n        <div class="category">\n'
+            f'            <div class="category-header">{category_name}</div>\n'
+            '            <div class="category-content">\n'
+            '                <div class="link-grid">\n'
+            f'                    {links_html}\n'
+            '                </div>\n'
+            '            </div>\n'
+            '        </div>\n'
+        )
+        category_blocks.append(category_html)
+    categories_html = ''.join(category_blocks)
     
     # 生成HTML内容
     html_template = f"""
@@ -528,21 +587,7 @@ def generate_index_html():
             <div>个资源页面</div>
         </div>
         
-        {''.join([f'''
-        <div class="category">
-            <div class="category-header">{category_name}</div>
-            <div class="category-content">
-                <div class="link-grid">
-                    {''.join([f'''
-                    <div class="link-item" data-title="{parse_url_to_path(link).split('/')[-1].replace('-', ' ').title()}" data-url="{link.replace('https://www.imsdn.cn/', 'https://windows.unblock.win/')}" data-path="{parse_url_to_path(link)}">
-                        <div class="link-title">{parse_url_to_path(link).split('/')[-1].replace('-', ' ').title()}</div>
-                        <a href="{parse_url_to_path(link)}/index.html" class="link-btn" target="_blank">查看详情</a>
-                    </div>
-                    ''' for link in category_links])}
-                </div>
-            </div>
-        </div>
-        ''' for category_name, category_links in categories.items() if category_links])}
+        {categories_html}
         
         <div id="noResults" class="no-results" style="display: none;">
             没有找到匹配的资源
