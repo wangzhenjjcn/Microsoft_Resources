@@ -5,6 +5,12 @@ import os
 import json
 import sys
 
+# 确定仓库根目录和 docs 目录，避免因工作目录变化导致的相对路径问题
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+DOCS_DIR = os.path.join(REPO_ROOT, 'docs')
+
+
 def check_dependencies():
     """检查必要的依赖是否已安装"""
     required_packages = ['requests', 'bs4']
@@ -23,6 +29,7 @@ def check_dependencies():
         sys.exit(1)
     else:
         print("✅ 所有依赖包已安装")
+
 
 def extract_page_data(url):
     """提取页面数据"""
@@ -107,6 +114,7 @@ def extract_page_data(url):
         print(f"提取页面数据时出错 {url}: {e}")
         return None
 
+
 def parse_url_to_path(url):
     """将URL转换为本地文件路径"""
     # 处理两种URL格式
@@ -115,9 +123,10 @@ def parse_url_to_path(url):
         path = path[:-1]
     return path
 
+
 def create_directory_structure(path):
     """创建目录结构"""
-    full_path = os.path.join('docs', path)
+    full_path = os.path.join(DOCS_DIR, path)
     os.makedirs(full_path, exist_ok=True)
     return full_path
 
@@ -357,7 +366,7 @@ def generate_html_content(data):
 def generate_index_html():
     """生成汇总页面"""
     # 读取所有链接
-    with open('docs/a.txt', 'r', encoding='utf-8') as f:
+    with open(os.path.join(DOCS_DIR, 'a.txt'), 'r', encoding='utf-8') as f:
         links = [line.strip() for line in f.readlines()]
     
     # 按分类组织链接
@@ -646,10 +655,10 @@ def generate_index_html():
 """
     
     # 保存汇总页面
-    with open('docs/index.html', 'w', encoding='utf-8') as f:
+    with open(os.path.join(DOCS_DIR, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(html_template)
     
-    print(f"汇总页面已生成: docs/index.html")
+    print(f"汇总页面已生成: {os.path.join(DOCS_DIR, 'index.html')}")
 
 def save_page_data(url):
     """保存页面数据"""
@@ -680,7 +689,7 @@ def main():
     check_dependencies()
     
     # 读取已采集的链接
-    with open('docs/a.txt', 'r', encoding='utf-8') as f:
+    with open(os.path.join(DOCS_DIR, 'a.txt'), 'r', encoding='utf-8') as f:
         links = [line.strip() for line in f.readlines()]
     
     print(f"开始处理 {len(links)} 个页面...")
