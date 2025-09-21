@@ -129,6 +129,20 @@ def is_ed2k_url(url):
     """判断是否为ed2k链接"""
     return url.startswith('ed2k://')
 
+# 新增：按钮渲染辅助函数，避免在 f-string 表达式中包含反斜杠
+
+def render_http_button(url: str) -> str:
+    if not is_http_url(url):
+        return ''
+    return f'<button class="download-btn" onclick="openDownloadLink(&quot;{url}&quot;)">立即下载</button>'
+
+
+def render_thunder_button(url: str) -> str:
+    if not is_ed2k_url(url):
+        return ''
+    return f'<button class="thunder-btn" onclick="copyToClipboard(&quot;{url}&quot;)">复制使用迅雷下载</button>'
+
+
 def generate_html_content(data):
     """生成HTML内容"""
     # 确保数据完整性
@@ -262,8 +276,8 @@ def generate_html_content(data):
                 <div class="download-type">{download.get('download_type', '下载')}</div>
                 <div class="download-url">{download.get('download_url', '')}</div>
                 <button class="copy-btn" onclick="copyToClipboard('{download.get('download_url', '')}')">复制下载链接</button>
-                {('<button class="download-btn" onclick="openDownloadLink(\'{0}\')">立即下载</button>'.format(download.get("download_url", "")) if is_http_url(download.get('download_url', '')) else '')}
-                {('<button class="thunder-btn" onclick="copyToClipboard(\'{0}\')">复制使用迅雷下载</button>'.format(download.get("download_url", "")) if is_ed2k_url(download.get('download_url', '')) else '')}
+                {render_http_button(download.get('download_url', ''))}
+                {render_thunder_button(download.get('download_url', ''))}
             </div>
             ''' for download in version.get('downloads', [])])}
         </div>
